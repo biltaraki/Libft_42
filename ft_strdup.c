@@ -6,7 +6,7 @@ char	*ft_strdup(const char *s1)
 	size_t	len;
 	char	*array;
 
-	len = ft_strlen(s1) + 1;
+	len = ft_strlen(s1) + 1;//header
 	array = (char *)malloc(sizeof(char) * len);
 	if (array == NULL)
 		return (NULL);
