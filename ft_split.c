@@ -49,16 +49,16 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (s[i])
 	{
-		while (s[i] == c)
+		while (s[i] == c)//for skip space
 			i++;
-		if (!s[i])
+		if (!s[i])//qif the end
 			break ;
-		len = ft_char_count(&s[i], c);
+		len = ft_char_count(&s[i], c); // Word length
 		arr[j] = (char *)malloc(sizeof(char) * (len + 1));
 		if (!arr[j])
 			return (NULL);
 		ft_memcpy(arr[j], &s[i], len);
-		arr[j][len] = '\0';
+		arr[j][len] = '\0'; // memcpy don't check '\0'
 		i += len;
 		j++;
 	}
