@@ -26,7 +26,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	len_s1 = ft_strlen(s1);
+	len_s1 = ft_strlen(s1);//header
 	len_s2 = ft_strlen(s2);
 	arr = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
 	if (arr == NULL)
