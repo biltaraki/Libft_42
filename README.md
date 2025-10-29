@@ -13,6 +13,7 @@ Libft is the first core project at 42 School, where we reimplement a subset of s
 
 ## 🏗️ Project Structure
 
+
 ## 📋 Mandatory Functions
 
 ### 🔤 Character Classification (`ctype.h`)
@@ -72,3 +73,18 @@ typedef struct s_list
     void            *content;
     struct s_list   *next;
 } t_list;
+
+# Compile library
+make
+
+# Compile with bonus functions
+make bonus
+
+# Clean object files
+make clean
+
+# Full clean (objects + library)
+make fclean
+
+# Recompile
+make re
