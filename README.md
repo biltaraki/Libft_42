@@ -11,6 +11,19 @@ Libft is the first core project at 42 School, where we reimplement a subset of s
 
 **Score**: 125 / 100 ⭐
 
+# 📚 **The Topics I Am Learning In This Project.*
+
+These are the main topics I'm currently studying in systems programming and computer science:
+
+- [ ] **Kernel**
+- [ ] **File Descriptors**
+- [ ] **Binary**
+- [ ] **Hardware**
+- [ ] **Memory**
+- [ ] **Makefile**
+- [ ] **Operating Systems**
+- [ ] **Stack Overflow**
+
 ## 🏗️ Project Structure
 
 
