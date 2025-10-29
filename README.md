@@ -9,7 +9,7 @@
 
 Libft is the first core project at 42 School, where we reimplement a subset of standard C library functions along with additional utilities. This library serves as the foundation for all future C projects at 42.
 
-**Score**: [Your Score Here] / 100 ⭐
+**Score**: 125 / 100 ⭐
 
 ## 🏗️ Project Structure
 
