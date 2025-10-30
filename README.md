@@ -1,3 +1,7 @@
+| C Project | Grade |
+| :--- | :--- |
+| [Libft_42]() | <img src="https://img.shields.io/badge/125%20%2F%20100-success"/> |
+
 # 📚 Libft
 
 ![42](https://img.shields.io/badge/42-School-1E1E1E)
