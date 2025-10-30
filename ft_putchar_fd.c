@@ -2,5 +2,6 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	//fd file descriptor
 	write(fd, &c, 1);
 }
