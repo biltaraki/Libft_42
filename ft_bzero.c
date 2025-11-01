@@ -2,12 +2,12 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*p;
+	char	*poi;
 
-	p = (char *)s;
+	poi = (char *)s;
 	while (n--)
 	{
-		*p = 0;
-		p++;
+		*poi = 0;
+		poi++;
 	}
 }
