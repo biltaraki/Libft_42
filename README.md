@@ -1,6 +1,6 @@
 | C Project | Grade |
-| :--- | :--- |
-| [Libft_42]() | <img src="https://img.shields.io/badge/125%20%2F%20100-success"/> |
+| :-- | :-- |
+| [Libft_42](#) | <img src="https://img.shields.io/badge/125%20%2F%20100-success" alt="125/100" /> |
 
 # 📚 Libft
 
@@ -9,99 +9,52 @@
 ![Norminette](https://img.shields.io/badge/Code%20Style-Norminette-FF6B6B)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+> **Score**: 125 / 100 ⭐  
+> Libft is the first core project at 42 School. You re‑implement a subset of the standard C library along with utility functions.  
+> This library becomes the foundation for future C projects at 42.
+
+---
+
+## 🧭 Table of Contents
+- [Project Overview](#-project-overview)
+- [Topics I'm Learning](#-topics-im-learning)
+- [Project Structure](#-project-structure)
+- [Build & Makefile Targets](#-build--makefile-targets)
+- [API Summary](#-api-summary)
+  - [Character Classification (`ctype.h`)](#-character-classification-ctypeh)
+  - [String Manipulation (`string.h`)](#-string-manipulation-stringh)
+  - [Memory Operations](#-memory-operations)
+  - [Conversion Functions](#-conversion-functions)
+  - [Output Functions](#-output-functions)
+  - [Bonus: Linked Lists](#-bonus-linked-lists)
+- [Usage Example](#-usage-example)
+- [Code Style (Norminette)](#-code-style-norminette)
+- [License](#-license)
+
+---
+
 ## 🎯 Project Overview
+Libft is a static library (`libft.a`) that reimplements selected C standard functions and adds helper utilities you will reuse across 42 projects.
 
-Libft is the first core project at 42 School, where we reimplement a subset of standard C library functions along with additional utilities. This library serves as the foundation for all future C projects at 42.
+- **Language**: C (C99/C11 compatible)
+- **Build**: `make` (static library)
+- **Output**: `libft.a`
 
-**Score**: 125 / 100 ⭐
+---
 
-# 📚 **The Topics I Am Learning In This Project.*
+## 📚 Topics I'm Learning
+These are the systems and CS topics I'm actively studying while building Libft:
 
-These are the main topics I'm currently studying in systems programming and computer science:
-
-- [ ] **Kernel**
+- [ ] **Kernel basics**
 - [ ] **File Descriptors**
-- [ ] **Binary**
-- [ ] **Hardware**
-- [ ] **Memory**
+- [ ] **Binary formats & toolchain**
+- [ ] **Hardware & architecture**
+- [ ] **Memory (stack vs heap, ownership)**
 - [ ] **Makefile**
 - [ ] **Operating Systems**
-- [ ] **Stack Overflow**
+- [ ] **Debugging & tooling (gdb, valgrind)**
+<!-- If you intentionally meant the website "Stack Overflow", keep it. Otherwise "Stack & Heap" is more accurate technically. -->
+
+---
 
 ## 🏗️ Project Structure
-
-
-## 📋 Mandatory Functions
-
-### 🔤 Character Classification (`ctype.h`)
-| Function | Description |
-|----------|-------------|
-| `ft_isalpha` | Checks for alphabetic character |
-| `ft_isdigit` | Checks for digit (0 through 9) |
-| `ft_isalnum` | Checks for alphanumeric character |
-| `ft_isascii` | Checks if character is ASCII |
-| `ft_isprint` | Checks for printable character |
-| `ft_toupper` | Converts character to uppercase |
-| `ft_tolower` | Converts character to lowercase |
-
-### 📝 String Manipulation (`string.h`)
-| Function | Description |
-|----------|-------------|
-| `ft_strlen` | Calculates length of string |
-| `ft_strlcpy` | Copies string with size limit |
-| `ft_strlcat` | Concatenates strings with size limit |
-| `ft_strchr` | Locates first occurrence of character |
-| `ft_strrchr` | Locates last occurrence of character |
-| `ft_strncmp` | Compares two strings up to n characters |
-| `ft_strnstr` | Locates a substring in a string |
-| `ft_strdup` | Duplicates a string |
-
-### 🧮 Memory Operations
-| Function | Description |
-|----------|-------------|
-| `ft_memset` | Fills memory with constant byte |
-| `ft_bzero` | Zeros a byte string |
-| `ft_memcpy` | Copies memory area |
-| `ft_memmove` | Copies memory area (handles overlap) |
-| `ft_memchr` | Scans memory for a character |
-| `ft_memcmp` | Compares memory areas |
-| `ft_calloc` | Allocates and zeros memory |
-
-### 🔄 Conversion Functions
-| Function | Description |
-|----------|-------------|
-| `ft_atoi` | Converts string to integer |
-| `ft_itoa` | Converts integer to string |
-
-### 📤 Output Functions
-| Function | Description |
-|----------|-------------|
-| `ft_putchar_fd` | Outputs character to file descriptor |
-| `ft_putstr_fd` | Outputs string to file descriptor |
-| `ft_putendl_fd` | Outputs string + newline to file descriptor |
-| `ft_putnbr_fd` | Outputs number to file descriptor |
-
-## ⭐ Bonus Functions (Linked Lists)
-
-### List Structure
-```c
-typedef struct s_list
-{
-    void            *content;
-    struct s_list   *next;
-} t_list;
-
-# Compile library
-make
-
-# Compile with bonus functions
-make bonus
-
-# Clean object files
-make clean
-
-# Full clean (objects + library)
-make fclean
-
-# Recompile
-make re
